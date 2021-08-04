@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>HomeContainer</servlet-name>
+  	<display-name>HomeContainer</display-name>
+  	<description>for the index page</description>
+  	<servlet-class>com.farhath.web.HomeContainer</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SignupContainer</servlet-name>
+  	<display-name>SignupContainer</display-name>
+  	<description>To collect data after sign up</description>
+  	<servlet-class>com.farhath.web.SignupContainer</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginContainer</servlet-name>
+  	<display-name>LoginContainer</display-name>
+  	<description></description>
+  	<servlet-class>com.farhath.web.LoginContainer</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>searchContainer</servlet-name>
+  	<display-name>searchContainer</display-name>
+  	<description></description>
+  	<servlet-class>com.farhath.web.searchContainer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HomeContainer</servlet-name>
+  	<url-pattern>/HomeContainer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignupContainer</servlet-name>
+  	<url-pattern>/SignupContainer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginContainer</servlet-name>
+  	<url-pattern>/LoginContainer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>searchContainer</servlet-name>
+  	<url-pattern>/searchContainer</url-pattern>
+  </servlet-mapping>
+</web-app>
